@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageIguatemiDetail1"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:src="@drawable/iguatemi2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIguatemiDescription" />
+
+    <ImageView
+        android:id="@+id/imageIguatemiDetail2"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/iguatemi3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageIguatemiDetail1" />
+
+    <TextView
+        android:id="@+id/textViewIguatemiDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Descrição do Iguatemi Esplanada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageIguatemiDetail2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="94dp" />
+
+    <Button
+        android:id="@+id/buttonVerMapaIguatemi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver no Mapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageIguatemiDetail1" />
+
+    <Button
+        android:id="@+id/buttonOpenWebsiteIguatemi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Abrir Site"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageIguatemiDetail2" />
+
+    <Button
+        android:id="@+id/buttonPhoneCallIguatemi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Telefonar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOpenWebsiteIguatemi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
